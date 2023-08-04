@@ -7,6 +7,7 @@
 body{
     background: url('images/bg-desktop.svg') hsl(257, 40%, 49%);
     color: white;
+    /* overflow: hidden; */
 }
 
 /* header and nav */
@@ -60,4 +61,27 @@ button{
     background-color: white;
     border: white;
     box-shadow: 5px 3px 20px 1px rgba(0, 0, 0,0.8);
+}
+
+.icon{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 4rem 0 0;
+    position: relative;
+    bottom: 4rem;
+}
+
+svg{
+    margin-right: 2rem;
+    fill: white;}
+
+    /* hover */
+button:hover{
+    color:  white;
+    background-color: hsl(300, 69%, 71%);
+    border: hsl(300, 69%, 71%);
+}
+svg:hover{
+    fill: violet;
 }
