@@ -85,3 +85,46 @@ button:hover{
 svg:hover{
     fill: violet;
 }
+
+/* media queries for mobile responsiveness */
+@media screen and (max-width: 1000px){
+    .logo img{
+        width: 25%;
+    }
+
+    .showcase{
+        flex-direction: column;
+    }
+    .left-img, .showcase-text{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .logo img{
+        width: 43%;
+    }
+
+    .showcase{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .left-img, .showcase-text{
+        width: 100%;
+    }
+
+    button{
+        padding: 0.9rem 5.4rem;
+    }
+    .icon{
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-top: 2rem;
+    }
+    svg{
+        margin-right: 1rem;
+    }
+}
