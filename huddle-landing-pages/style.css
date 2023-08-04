@@ -23,7 +23,7 @@ header{
 .showcase{
     display: flex;
     justify-content: space-evenly;
-    padding: 1.5rem 4.5rem;
+    padding: 4rem 4.5rem;
 }
 .left-img, .showcase-text{
     width: 50%;
@@ -31,16 +31,23 @@ header{
 .left-img img{
     width: 95%;
 }
+.showcase-text{
+    padding: 0.7rem;
+}
 
 /* showcase-text */
 .heading{
     font-family: 'Poppins', sans-serif;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 600;
 }
 
 .subtext{
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
+}
+
+.heading, .subtext, button{
+    margin: 1.5rem;
 }
