@@ -6,4 +6,41 @@
 
 body{
     background: url('images/bg-desktop.svg') hsl(257, 40%, 49%);
+    color: white;
+}
+
+/* header and nav */
+
+header{
+    width: 100%;
+    padding: 1.7rem 1rem 1.7rem 4rem;
+}
+.logo img{
+    width: 18%;
+}
+
+/* showcase */
+.showcase{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5rem 4.5rem;
+}
+.left-img, .showcase-text{
+    width: 50%;
+}
+.left-img img{
+    width: 95%;
+}
+
+/* showcase-text */
+.heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.subtext{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
 }
