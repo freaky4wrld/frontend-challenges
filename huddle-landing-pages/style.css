@@ -7,6 +7,10 @@
 body{
     background: url('images/bg-desktop.svg') hsl(257, 40%, 49%);
     color: white;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
     /* overflow: hidden; */
 }
 
