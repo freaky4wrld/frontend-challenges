@@ -15,20 +15,22 @@ body{
 header{
     margin:  2rem 7.5rem;
 }
-
+.menu-btn{
+    display: none;
+}
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#nav-options{
+.nav-options{
     display: flex;
     list-style: none;
     gap: 2rem;
 }
 
-#nav-options li{
+.nav-options li{
     color: hsl(236, 13%, 42%);
 }
 /* Main-content */
@@ -41,9 +43,12 @@ main{
 /* Showcase-section(left-grid) */
 #showcase-section{
     display: grid;
+    grid-area: auto;
+    grid-row: 1/2;
 }
 .showcase-img img{
-    width: 100%;  
+    max-width: 100%;  
+
 }
 
 #showcase-section .content{
@@ -58,13 +63,18 @@ h1{
 }
 p{
     grid-column: 2/4;
+    grid-row: 1/2;
     font-size: 15px;
 }
-button{
+
+
+.content button{
     grid-column-start: 2;
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
+    max-height: 50px;
+    min-width: 10rem;
     color: white;
     background-color: hsl(5, 85%, 63%);
     border: hsl(5, 85%, 63%) solid 1px;
@@ -104,14 +114,17 @@ button{
 #options{
     grid-column: 1/3;
     display: flex;
+    flex-direction: row;
     gap: 2rem;
 }
 .option-info{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    width: 35%;
+    display: flex;
+    gap: 1rem;
+
 }
 .option-info img{
-    width: 89%;
+    min-width: 40%;
 }
 .info-text{
     display: flex;
@@ -130,11 +143,11 @@ button{
 }
 
 /* hovers */
-#nav-options li:hover, .info-text .bold-text:hover{
+.nav-options li:hover, .info-text .bold-text:hover{
     color: hsl(5, 85%, 63%);
     cursor: pointer;
 }
-button:hover{
+.content button:hover{
     background-color: hsl(240, 100%, 5%);
     border-color: hsl(240, 100%, 5%);
     cursor: pointer;
@@ -142,3 +155,140 @@ button:hover{
 .article h3:hover{
     color:hsl(35, 77%, 62%);cursor: pointer;
 }
+
+/* Responsiveness */
+@media screen and (max-width: 1200px) {
+    header{
+        margin:  2rem 6.3rem;
+    }
+
+    main{
+        margin: 2rem 6.3rem;
+    }
+    .showcase-img img{
+        min-height: 100%;
+    }
+    .content h1{
+        margin-right: 0.4rem;
+    }
+    
+    .option-info{
+        width: 45%;
+        gap: 0.5rem;
+    }
+    .option-info img{
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header{
+        margin:  2rem 4.3rem;
+    }
+
+    main{
+        margin: 2rem 4.3rem;
+    }
+    .option-info img{
+        width: 36%;
+    }
+    .info-text h2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    header{
+        margin:  2rem 2rem;
+    }
+
+    main{
+        margin: 2rem 2rem;
+    }
+    .option-info img{
+        width: 27%;
+    }
+}
+
+/* Mobile Responsivness */
+@media screen and (max-width: 700px) {
+    header{
+        margin: 2rem 1rem;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 1rem;
+    }
+    #showcase-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .showcase-img{
+        height: 39vh;
+    }
+    #showcase-section .content{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    p{
+        font-size: 18px;
+    }
+    .content button{
+        width: 4rem;
+        font-size: 18px;
+        padding: 1rem 1rem;
+    }
+    #options{
+        flex-direction: column;
+    }
+    .option-info{
+        width: 100%;
+    } 
+    /* Menu Buttton */
+
+    .menu-btn{
+        display: block;
+        position: absolute;
+        top: 2.9em;
+        right: 1rem;
+    }
+    .menu-btn button{
+        background-color: hsl(36, 100%, 99%);
+        border: none;
+    }
+    .nav-options{
+        display: block;
+        background-color: hsl(36, 100%, 99%);
+        width: 67vw;
+        height: 100vh;
+        position: absolute;
+        top: 0rem;
+        right: 0rem;
+        z-index: 2;
+        border: hsl(36, 100%, 99%) 1px solid;
+        padding: 2rem 2rem;
+        transform: translateX(500px);
+    }
+    .show{
+        transform: translateX(20px);
+    }
+    .nav-options button{
+        float: right;
+        margin-bottom: 3rem;
+        background-color: hsl(36, 100%, 99%);
+        border: none;
+    }
+
+    .nav-options li{
+        margin-bottom: 2rem;
+        font-size: 18px;
+        color: black;
+    }
+
+    .nav-options li:first-of-type{
+        margin-top: 7rem;
+    }
+}
+
