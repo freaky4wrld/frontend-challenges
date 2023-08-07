@@ -30,6 +30,10 @@ header nav {
     gap: 2rem;
 }
 
+.nav-options button{
+    display: none;
+}
+
 .nav-options li{
     color: hsl(236, 13%, 42%);
 }
@@ -267,14 +271,15 @@ p{
         top: 0rem;
         right: 0rem;
         z-index: 2;
-        border: hsl(36, 100%, 99%) 1px solid;
+        border-left: black 1px solid;
         padding: 2rem 2rem;
         transform: translateX(500px);
     }
     .show{
         transform: translateX(20px);
     }
-    .nav-options button{
+    .nav-options .show-btn{
+        display: block;
         float: right;
         margin-bottom: 3rem;
         background-color: hsl(36, 100%, 99%);
