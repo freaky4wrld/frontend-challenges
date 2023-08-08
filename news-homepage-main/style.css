@@ -274,6 +274,7 @@ p{
         border-left: black 1px solid;
         padding: 2rem 2rem;
         transform: translateX(500px);
+        transition: transform 0.4s ease-in-out;
     }
     .show{
         transform: translateX(20px);
@@ -295,5 +296,19 @@ p{
     .nav-options li:first-of-type{
         margin-top: 7rem;
     }
+    /* Overlay style and enable */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: rgba(0,0,0,0.7);
+      }
+      .overlay.enabled {
+        display: initial;
+      }
 }
 
