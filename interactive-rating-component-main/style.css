@@ -75,11 +75,13 @@ body{
     border-color:  hsl(25, 97%, 53%);
     color: white;
 }
-.no-show{
-    display: none;
-}
-#thank-you-card{
+.thanks-show{
     display: flex;
+}
+
+/* thank you card */
+#thank-you-card{
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -98,6 +100,19 @@ body{
     margin: 0.7rem 0;
 }
 
+/* active states */
+#rating-section .rating-star:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    cursor: pointer;
+    border-color: hsl(25, 97%, 53%);
+}
+#submit-btn:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    border-color: white;
+}
+/* Mobile Responsiveness */
 @media screen and (max-width: 1000px) {
     .support-card-component{
         width: 50%;
