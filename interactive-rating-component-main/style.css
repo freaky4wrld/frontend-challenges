@@ -75,8 +75,8 @@ body{
     border-color:  hsl(25, 97%, 53%);
     color: white;
 }
-.thanks-show{
-    display: flex;
+.no-show{
+    display: none;
 }
 
 /* thank you card */
