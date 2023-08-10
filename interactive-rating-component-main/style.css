@@ -75,6 +75,28 @@ body{
     border-color:  hsl(25, 97%, 53%);
     color: white;
 }
+.no-show{
+    display: none;
+}
+#thank-you-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center-text h1, .center-text p{
+    text-align: center;
+}
+.center-text p{
+    width: 100%;
+}
+.rating-display{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(220, 8%, 30%);
+    padding: 0.7rem;
+    border-radius: 20px;
+    margin: 0.7rem 0;
+}
 
 @media screen and (max-width: 1000px) {
     .support-card-component{
