@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+}
+
+.support-card-component{
+    width: 40%;
+    margin: 7rem auto;
+    background-color: hsl(213, 19%, 18%);
+    border: hsl(213, 19%, 18%) solid 4px;
+    border-radius: 2rem;
+    padding: 3rem;
+    z-index: 2;
+}
+.support-card-component #star-component {
+    width: 10%;
+    height: 3vw;
+    border: hsl(220, 8%, 30%) 0.1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(220, 8%, 30%);
+    z-index: 3;
+    margin: 1.2rem 0;
+}
+
+.support-card-content h1{
+    font-weight: 700;
+    margin: 2.1rem 0 1.2rem 0;
+}
+
+.support-card-content p{
+    color: hsl(217, 12%, 63%);
+    margin: 1.2rem 0;
+    font-weight: 400;
+    width: 87%;
+}
+#rating-section{
+    display: flex;
+    margin: 1.2rem auto;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+#rating-section .rating-star{
+    min-width: 12%;
+    border: hsl(220, 8%, 30%) solid 2px;
+    border-radius: 50%;
+    min-height: 3.6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(220, 8%, 30%);
+    color: hsl(216, 12%, 54%);
+    font-size: 18px;
+    z-index: 3;
+}
+#submit-btn{
+    text-transform: uppercase;
+    padding: 1rem 0;
+    width: 100%;
+    border-radius: 30px;
+    margin: 0.9rem auto;
+    font-size: 20px;
+    background-color:  hsl(25, 97%, 53%);
+    border-color:  hsl(25, 97%, 53%);
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .support-card-component{
+        width: 50%;
+        margin: 8.5rem auto;
+    }
+    .support-card-component #star-component {
+        width: 11%;
+        height: 4.2vw;
+    }
+    #rating-section .rating-star{
+        height: 5vw;
+        font-size: 16px;
+    }
+    #rating-section{
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .support-card-component{
+        width: 88%;
+        margin: 9rem auto;
+    }
+    .support-card-component #star-component {
+        width: 15%;
+        height: 9vw;
+    }
+    #rating-section .rating-star{
+        width: 24%;
+        height: 9vw;
+        font-size: 16px;
+    }
+    #rating-section{
+        gap: 1.2rem;
+        margin: 0.9rem auto;
+    }   
+}
