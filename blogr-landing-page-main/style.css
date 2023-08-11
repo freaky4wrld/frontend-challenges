@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url(images/bg-pattern-intro-desktop.svg), linear-gradient(90deg, hsla(13, 100%, 72%), hsla(353, 100%, 62%,0.89));
+    background-size: 150vw 288vh;
+    background-position: 28% 56%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 3rem 0 7rem 0;
+    border-radius: 0 0 0 72px;
+}
+.sub-options{display: none;}
+.show{display: block;}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#icon-cum-menu{
+    display: flex;
+    gap: 7rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-options{
+    display: flex;
+    gap: 2.1rem
+}
+.nav-options li{
+    list-style: none;
+    color: hsl(0, 11%, 96%);
+    font-family: 'Ubuntu', sans-serif;
+}
+#buttons{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+#buttons a{
+    color: hsl(0, 11%, 96%);
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+.active-btn{
+    border: hsl(0, 0%, 100%) solid 1px;
+    background-color: hsl(0, 0%, 100%);
+    font-size: 0.9rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: hsl(356, 100%, 66%);
+    border-radius: 18px;
+    padding: 0.5rem 1rem;
+}
+
+/* showcase-section */
+#showcase-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass',sans-serif;
+}
+
+#showcase-section h1{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+#showcase-section p, #showcase-section h1{
+    color: hsl(0, 0%, 100%)
+}
+#showcase-btns{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+#border-only{
+    background-color: hsl(353, 100%, 62%);
+    color: hsl(0, 0%, 100%);
+    
+}
+
+
+
