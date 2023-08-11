@@ -89,6 +89,89 @@ nav{
     color: hsl(0, 0%, 100%);
     
 }
+main{padding: 3rem 0;}
+h2{
+    text-align: center;
+    font-size: 2.1rem;
+}
+h2,h3{
+    color: hsl(208, 49%, 24%);
+}
+h2,.text-top,.text-bottom,.special-text{
+    font-family: 'Overpass', sans-serif;
+}
+.basic-intro{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.section-img{
+    width: 36%;
+}
+.section-img img{
+    height: 100vh;
+}
+.intro-text{
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    padding-left: 9rem;
+    margin-bottom: 9rem;
 
+}
+h3{
+    margin-bottom: 1rem;
+}
+.text-bottom p,.text-top p,.special-text p{
+    line-height: 1.8rem;
+    margin-top: 0.7rem;
+}
+/* special infrastructure */
+.special-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 52vh;
+    background-image: url(images/bg-pattern-circles.svg), linear-gradient(hsl(237, 17%, 21%),hsl(237, 23%, 32%));
+    background-repeat: no-repeat;
+    background-position: left -80% bottom 10%;
+    margin: 3rem 0;
+    border-radius: 0 63px 0 63px;
+}
+.special-text{
+    max-width: 36%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.special-text,.special-heading{
+    color: hsl(0, 0%, 100%);
+}
+/* features */
+.features{
+    display: flex;
+    justify-content: space-between;
+    margin: 10rem 0 4rem 0;
+    gap: 2rem;
 
+}
+.features-img{
+    width: 36%;
+}
+.features-img img{
+    height: 80vh;
+}
+.feature-text{
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    padding-right: 3rem;
 
+}
