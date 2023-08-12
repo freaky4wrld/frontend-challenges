@@ -70,8 +70,6 @@ nav{
 }
 
 .sub-options{
-    position: absolute;
-    top: 6rem;
     background-color: hsl(0, 0%, 100%);
     padding: 1rem;
     z-index: 2;
@@ -307,11 +305,18 @@ footer{
     }
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 830px) {
     #icon-cum-menu{gap: 3.6rem}
     .grouped{gap: 3rem;}
+    .section-img img{
+        height: 40vh;
+    }
     .intro-text{
         margin-top: 7rem;
+        max-width: 40vh;
+    }
+    .special-section{
+        max-height: 25vh;
     }
     .special-text{
         max-width: 45%;
@@ -327,7 +332,7 @@ footer{
         width: 40%;
     }
     .features-img img{
-        height: 66vh;
+        height: 32vh;
     }
     .feature-text{
         max-width: 48%;
@@ -393,7 +398,7 @@ footer{
         position: absolute;
         top: 7rem;
         left: 3rem;
-        height: 121vh;
+        height: 43vh;
         display: flex;
         flex-direction: column;
         align-items: space-between;
@@ -445,7 +450,9 @@ footer{
         width: 100%;
     }
     .section-img img{
-        height: 75vh;
+        height: 32vh;
+        width: 100%;
+        margin: 0.5rem auto;
     }
     .intro-text{
         justify-content: center;
@@ -471,8 +478,8 @@ footer{
         top: -9rem;
     }
     .special-img img{
-        width: 80vw;
-        height: 84vh;
+        width: 100vw;
+        height: 50vh;
     }
     .special-text{
         position: relative;
@@ -494,7 +501,7 @@ footer{
         width: 100%;
     }
     .features-img img{
-        height: 72vh;
+        height: 32vh;
     }
     .feature-text{
         justify-content: center;

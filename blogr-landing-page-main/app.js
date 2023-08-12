@@ -21,6 +21,7 @@ menuExpandBtn.forEach((btn) =>{
         }
         console.log(subOptionId)
         subOptionId.classList.toggle('show');
+        optionsList.style.height = '54vh';
     })
 })
 
