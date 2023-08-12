@@ -16,9 +16,10 @@ header{
     padding: 3rem 0 7rem 0;
     border-radius: 0 0 0 72px;
 }
-.sub-options{display: none;}
+#menu-btn, .sub-options{display: none;}
 .show{display: block;}
-#menu-btn, .icon {border: none;background-color: hsla(13, 100%, 72%,0.2);}
+#menu-btn, .icon {border: none;background-color: hsla(13, 100%, 72%,0.2); margin-left: 0.5rem;}
+
 .mobile{display: none;}
 nav{
     display: flex;
@@ -30,6 +31,11 @@ nav{
     gap: 7rem;
     align-items: center;
     justify-content: space-between;
+}
+.grouped{
+    display: flex;
+    align-items: center;
+    gap: 9rem;
 }
 .nav-options{
     display: flex;
@@ -63,6 +69,19 @@ nav{
     padding: 0.5rem 1rem;
 }
 
+.sub-options{
+    position: absolute;
+    top: 6rem;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    z-index: 2;
+    border-radius: 4px;
+    box-shadow: rgb(175, 158, 158) 0 2px 9px;
+}
+.sub-options li{
+    color: rgb(7, 6, 6);
+}
+.sub-options li:not(.sub-options li:last-of-type){margin-bottom: 0.7rem;}
 /* showcase-section */
 main{overflow-x: hidden;}
 #showcase-section{
@@ -233,6 +252,8 @@ footer{
     .section-img img{
         height: 100vh;
     }
+    #icon-cum-menu{gap: 4rem}
+    .grouped{gap: 4rem;}
     .intro-text{
         margin-top: 4rem;
         max-width: 45%;
@@ -287,6 +308,8 @@ footer{
 }
 
 @media screen and (max-width: 810px) {
+    #icon-cum-menu{gap: 3.6rem}
+    .grouped{gap: 3rem;}
     .intro-text{
         margin-top: 7rem;
     }
@@ -327,8 +350,65 @@ footer{
         background-position: 27% 36%;
         background-repeat: no-repeat;
     }
-    .nav-options,#buttons{
-        display: none;
+    #icon-cum-menu{gap: 12rem;}
+    #close-btn{display: none;}
+    .nav-options{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+    .nav-options li, #buttons a{
+        color: hsl(208, 49%, 24%);
+    }
+    .nav-options li{
+        margin-bottom: 0.2rem;
+    }
+    .icon{background-color: hsla(353, 100%, 62%,0.2);}
+    
+    #buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border-top: hsl(208, 28%, 88%) solid 2px;
+        padding: 0.5rem 0 0 0;
+    }
+    .active-btn{
+        border: hsl(356, 100%, 66%) solid 1px;
+        background-color: hsl(356, 100%, 66%);
+        color: hsl(0, 0%, 100%);
+    }
+    .mobile-expand{
+        padding: 1.8rem 3rem 0 3rem;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 4px;
+        position: absolute;
+        top: 7rem;
+        left: 3rem;
+        max-height: 108vh;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: center;
+        width: 85vw;
+        z-index: 3;
+        box-shadow: hsl(0, 5%, 71%) 0 0 7px;
+    }
+    .grouped{
+        display: block;
+    }
+    .sub-options{
+        position: none;
+        position: static;
+        background-color: hsl(208, 28%, 88%);
+        margin-top: 0.5rem;
+        padding: 1rem 3rem;
+        color: hsl(208, 49%, 24%);
+        z-index: 2;
+        border-radius: 4px;
+    
     }
     #showcase-section h1{
         font-size: 2.1rem;
@@ -336,6 +416,9 @@ footer{
     }
     h2{
         font-size: 1.8rem;
+    }
+    #menu-btn{
+        display: block;
     }
     .text-bottom p,.text-top p,.special-text p{
         line-height: 1.8rem;
