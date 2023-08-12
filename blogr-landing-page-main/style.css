@@ -18,6 +18,7 @@ header{
 }
 .sub-options{display: none;}
 .show{display: block;}
+.icon{border: none;background-color: hsla(13, 100%, 72%,0.2);}
 nav{
     display: flex;
     justify-content: space-around;
@@ -62,6 +63,7 @@ nav{
 }
 
 /* showcase-section */
+main{overflow-x: hidden;}
 #showcase-section{
     display: flex;
     flex-direction: column;
@@ -149,7 +151,7 @@ h3{
     flex-direction: column;
     gap: 1.2rem;
 }
-.special-text,.special-heading{
+.special-text,.special-heading,.sections{
     color: hsl(0, 0%, 100%);
 }
 /* features */
@@ -174,4 +176,51 @@ h3{
     align-items: center;
     padding-right: 3rem;
 
+}
+/* footer */
+footer{
+    display: flex;
+    background-color: hsl(240, 10%, 16%);
+    justify-content: space-around;
+    padding: 7rem;
+    font-family: 'Overpass', sans-serif;
+    border-radius: 0 84px 0 0;
+}
+.footer-list{
+    display: flex;
+    gap: 12rem;
+}
+.bold{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    margin-bottom: 2.1rem;
+}
+.footer-options {
+    list-style: none;
+    color: hsl(0, 5%, 71%);
+}
+.footer-options li:not(.footer-options li:last-of-type){
+    margin-bottom: 1.2rem;
+}
+
+/* hover */
+.nav-options li:hover, #buttons a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.icon{cursor: pointer;}
+.active-btn:hover{
+    background-color: hsl(355, 100%, 74%);
+    border-color: hsl(355, 100%, 74%);
+    color: white;
+    cursor: pointer;
+}
+#border-only:hover{
+    border: hsl(0, 0%, 100%) solid 1px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+    cursor: pointer;
+}
+.footer-options li:hover{
+    text-decoration: underline;
 }
