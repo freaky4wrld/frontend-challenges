@@ -16,9 +16,9 @@ header{
     padding: 3rem 0 7rem 0;
     border-radius: 0 0 0 72px;
 }
-#menu-btn, .sub-options{display: none;}
+#menu-btn, #close-btn, .sub-options{display: none;}
 .show{display: block;}
-#menu-btn, .icon {border: none;background-color: hsla(13, 100%, 72%,0.2); margin-left: 0.5rem;}
+#menu-btn, #close-btn, .icon {border: none;background-color: hsla(13, 100%, 72%,0.2); margin-left: 0.5rem;}
 
 .mobile{display: none;}
 nav{
@@ -366,7 +366,8 @@ footer{
     .nav-options li{
         margin-bottom: 0.2rem;
     }
-    .icon{background-color: hsla(353, 100%, 62%,0.2);}
+    .icon{background-color: hsl(0, 0%, 100%) ;fill:hsl(353, 100%, 62%);}
+    .icon img{width: 3vw;}
     
     #buttons{
         display: flex;
@@ -380,6 +381,11 @@ footer{
         background-color: hsl(356, 100%, 66%);
         color: hsl(0, 0%, 100%);
     }
+    .active-btn:hover{
+        border: hsl(356, 100%, 66%) solid 1px;
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(356, 100%, 66%);
+    }
     .mobile-expand{
         padding: 1.8rem 3rem 0 3rem;
         background-color: hsl(0, 0%, 100%);
@@ -387,7 +393,7 @@ footer{
         position: absolute;
         top: 7rem;
         left: 3rem;
-        max-height: 108vh;
+        height: 121vh;
         display: flex;
         flex-direction: column;
         align-items: space-between;
@@ -395,9 +401,6 @@ footer{
         width: 85vw;
         z-index: 3;
         box-shadow: hsl(0, 5%, 71%) 0 0 7px;
-    }
-    .grouped{
-        display: block;
     }
     .sub-options{
         position: none;
@@ -408,7 +411,9 @@ footer{
         color: hsl(208, 49%, 24%);
         z-index: 2;
         border-radius: 4px;
-    
+    }
+    .grouped{
+        display: none;
     }
     #showcase-section h1{
         font-size: 2.1rem;

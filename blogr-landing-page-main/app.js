@@ -1,5 +1,7 @@
 const menuExpandBtn = document.querySelectorAll('.icon');
-
+const menuBtn = document.querySelector('#menu-btn');
+const closeBtn = document.querySelector('#close-btn');
+const optionsList = document.querySelector('.grouped');
 menuExpandBtn.forEach((btn) =>{
     btn.addEventListener('click', (event) =>{
         let whichOptionToOpen = event.target.getAttribute('id').toLowerCase();
@@ -20,5 +22,18 @@ menuExpandBtn.forEach((btn) =>{
         console.log(subOptionId)
         subOptionId.classList.toggle('show');
     })
+})
+
+
+menuBtn.addEventListener('click', () =>{
+    menuBtn.style.display = 'none';
+    closeBtn.style.display = 'block'; 
+    optionsList.style.display = 'block';
+})
+
+closeBtn.addEventListener('click', () =>{
+    closeBtn.style.display = 'none';
+    menuBtn.style.display = 'block'; 
+    optionsList.style.display = 'none';
 })
 
