@@ -18,7 +18,8 @@ header{
 }
 .sub-options{display: none;}
 .show{display: block;}
-.icon{border: none;background-color: hsla(13, 100%, 72%,0.2);}
+#menu-btn, .icon {border: none;background-color: hsla(13, 100%, 72%,0.2);}
+.mobile{display: none;}
 nav{
     display: flex;
     justify-content: space-around;
@@ -223,4 +224,208 @@ footer{
 }
 .footer-options li:hover{
     text-decoration: underline;
+}
+/* mobile responsiveness */
+@media screen and (max-width: 950px) {
+    .section-img{
+        width: 40%;
+    }
+    .section-img img{
+        height: 100vh;
+    }
+    .intro-text{
+        margin-top: 4rem;
+        max-width: 45%;
+        gap: 2.1rem;
+        padding-left: 5rem;
+        margin-bottom: 13rem;
+    }
+    h3{
+        margin-bottom: 0.5rem;
+    }
+    .text-bottom p,.text-top p,.special-text p{
+        line-height: 1.2rem;
+        margin-top: 0.2rem;
+    }
+    #showcase-section h1{
+        font-size: 2.7rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    /* special */
+    .special-section{
+        max-height: 72vh;
+        background-position: left 90% bottom 17%;
+        margin: 2rem 0;
+        padding-right: 2rem;
+    }
+    .special-text{
+        max-width: 43%;
+        gap: 1.2rem;
+    }
+    /* features */
+    .features-img{
+        width: 40%;
+    }
+    .features-img img{
+        height: 72vh;
+    }
+    .feature-text{
+        max-width: 48%;
+        gap: 2.1rem;
+        padding-right: 4rem;
+    
+    }
+    /* footer */
+    footer{
+        padding: 3rem;
+    }
+    .footer-list{
+        gap: 9rem;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .intro-text{
+        margin-top: 7rem;
+    }
+    .special-text{
+        max-width: 45%;
+        gap: 1.2rem;
+    }
+    #showcase-section h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.6rem;
+    }
+    .features-img{
+        width: 40%;
+    }
+    .features-img img{
+        height: 66vh;
+    }
+    .feature-text{
+        max-width: 48%;
+        gap: 2.1rem;
+        padding-right: 1.2rem;
+    }
+    footer{
+        padding: 3rem;
+    }
+    .footer-list{
+        gap: 7rem;
+    }
+}
+
+/* mobile responsiveness */
+@media screen and (max-width: 600px) {
+    header{
+        background-image: url(images/bg-pattern-intro-mobile.svg), linear-gradient(90deg, hsla(13, 100%, 72%), hsla(353, 100%, 62%,0.89));
+        background-size: 250vw;
+        background-position: 27% 36%;
+        background-repeat: no-repeat;
+    }
+    .nav-options,#buttons{
+        display: none;
+    }
+    #showcase-section h1{
+        font-size: 2.1rem;
+        text-align: center;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    .text-bottom p,.text-top p,.special-text p{
+        line-height: 1.8rem;
+        margin-top: 0.7rem;
+    }
+    /* basic intro */
+    .basic-intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        padding: 0.7rem;
+    }
+    .desktop{display: none;}
+    .mobile{display: block;}
+    .section-img{
+        margin: 1.2rem auto;
+        width: 100%;
+    }
+    .section-img img{
+        height: 75vh;
+    }
+    .intro-text{
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        max-width: 90%;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 9rem;
+    }
+    .special-section{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        max-height: none;
+        background-position: left 0% bottom 150%;
+        background-size: contain;
+        padding: 0;
+        align-items: center;
+    }
+    .special-img{
+        position: relative;
+        top: -9rem;
+    }
+    .special-img img{
+        width: 80vw;
+        height: 84vh;
+    }
+    .special-text{
+        position: relative;
+        top: -9rem;
+        max-width: 84%;
+        gap: 1rem;
+    }
+    /* features */
+    .features{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0 4rem 0;
+        gap: 2rem;
+    
+    }
+    .features-img{
+        margin: 1.2rem auto;
+        width: 100%;
+    }
+    .features-img img{
+        height: 72vh;
+    }
+    .feature-text{
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        max-width: 90%;
+        padding: 0;
+        text-align: center;
+    
+    }
+    /* footer */
+    .footer-list{
+        gap: 2.1rem;
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3.6rem;
+    }
 }
