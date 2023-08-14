@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-position: center; 
+    background-repeat: no-repeat;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    gap: 2rem;
+    box-shadow: 0 9px 7px hsl(240, 8%, 29%);
+    border-radius: 1.2rem;
+    width: 68%;
+    margin: 7rem auto;
+}
+#img-container{
+    background-image: url(images/bg-pattern-desktop.svg);
+    background: cover no-repeat center;
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+.fg-img{
+    position: absolute;
+    top: 19rem;
+    left: 7rem; 
+    z-index: 2;
+}
+.bg-img{
+    display: flex;
+    align-items: flex-end;
+}
+#faq-section{
+    padding: 4rem 4rem 4rem 0;
+    width: 70%;
+}
+.questions{
+    margin: 1.2rem 0 0 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px  solid hsl(240, 5%, 91%);
+}   
+.question-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question-head h4{color: hsl(237, 12%, 33%);}
+.answer{
+    font-size: 12px;
+    margin-top: 4px;
+    color: hsl(240, 6%, 50%);
+}
+
