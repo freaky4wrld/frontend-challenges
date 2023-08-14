@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+.grouped, .active-btn{
+    font-family: 'Ubuntu', sans-serif;
+}
+#menu-btn, #close-btn, .icon {
+    border: none;background-color:
+    hsla(13, 100%, 72%,0.2);
+    margin: 0 0 0 0.5rem;
+    }
+h1{
+    font-size: 3.4rem;
+    font-weight: 200;
+}
+h2{
+    text-align: center;
+    font-size: 2.1rem;
+}
+h2,h3{
+    color: hsl(208, 49%, 24%);
+}
+h2,.text-top,.text-bottom,.special-text{
+    font-family: 'Overpass', sans-serif;
+}
+h3{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+.text-bottom p,.text-top p,.special-text p{
+    line-height: 1.8;
+    margin-top: 0.7rem;
+}
+.mobile-btn, .mobile{display: none;}
+.special-text,.special-heading,.sections{
+    color: hsl(0, 0%, 100%);
+}
+
+/* Desktop Styling */
+header{
+    background-image: url(images/bg-pattern-intro-desktop.svg), linear-gradient(90deg, hsla(13, 100%, 72%, 0.89), hsla(353, 100%, 62%,0.84));
+    background: cover no-repeat;
+    padding: 4rem;
+    height: 63vh;
+    border-radius: 0 0 0 7.2rem;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 21rem;
+}
+.grouped{
+    position: absolute;
+    top: 4.5rem;
+    left: 27rem;
+    display: flex;
+    gap: 12rem;
+    color: hsl(0, 11%, 96%);
+}
+.nav-options{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    
+}
+.nav-text{
+    align-self: flex-start;
+    flex-grow: 0;
+    max-height: 7vh;
+}
+.sub-options{
+    display: none;
+    list-style: none;
+    background-color: hsl(0, 0%, 100%);
+    margin: 0.7rem 0 0 0;
+    padding: 1.2rem;
+    border-radius: 4px;
+    box-shadow: rgb(175, 158, 158) 0 2px 9px;
+    z-index: 2;
+    color: rgb(75, 64, 64);
+}
+.sub-options li:not(.sub-options li:last-of-type){
+    margin: 0 0 0.5rem 0;
+}
+#buttons a{
+    margin: 0 2rem 0 0;
+    color: hsl(0, 11%, 96%);
+    text-decoration: none;
+}
+.active-btn{
+    border: hsl(0, 0%, 100%) solid 1px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 18px;
+    padding: 0.5rem 1rem;
+}
+#showcase-section{
+ margin: 3rem 0 0 0;
+ display: flex;
+ flex-direction: column;
+ gap: 1.2rem;
+ align-items: center;
+ font-family: 'Overpass', sans-serif;
+ color: hsl(0, 0%, 100%);
+ text-align: center;
+}
+#showcase-btns{
+    margin: 2rem 0 0 0;
+    display: flex;
+    gap: 1.2rem;
+}
+/* main header and basic intro styling */
+main{padding: 9rem 0 0 0}
+
+.basic-intro{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0 0 0 7rem;
+}
+.section-img{display: flex;}
+.section-img img{
+    width: 100%;
+}
+.intro-text{
+    margin: 4rem 0 0 0;
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+    gap: 4rem;
+}
+/* special section styling */
+.special-section{
+    background-image: url(images/bg-pattern-circles.svg), linear-gradient(hsl(237, 17%, 21%),hsl(237, 23%, 32%));
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 54vh;
+    border-radius: 0 63px 0 63px;
+}
+.special-text{
+    max-width: 36%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+/* features */
+.features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12rem 0 0 0;
+    gap: 2rem;
+
+}
+.features-img{
+    width: 43%;
+}
+.feature-text{
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    padding-right: 3rem;
+}
+/* footer */
+footer{
+    display: flex;
+    background-color: hsl(240, 10%, 16%);
+    justify-content: space-around;
+    padding: 4rem;
+    font-family: 'Overpass', sans-serif;
+    border-radius: 0 84px 0 0;
+}
+.footer-list{
+    display: flex;
+    gap: 12rem;
+}
+.bold{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    margin-bottom: 2.1rem;
+}
+.footer-options {
+    list-style: none;
+    color: hsl(0, 5%, 71%);
+}
+.footer-options li:not(.footer-options li:last-of-type){
+    margin-bottom: 1.2rem;
+}
+/* hover */
+.nav-options li:hover, #buttons a:hover, .footer-options li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.icon:hover{cursor: pointer; rotate: 180deg;}
+span:hover + .sub-options{display: block;}
+.active-btn:hover{
+    background-color: hsl(355, 100%, 74%);
+    border-color: hsl(355, 100%, 74%);
+    color: white;
+    cursor: pointer;
+}
+#border-btn:hover{
+    border: hsl(0, 0%, 100%) solid 1px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+    cursor: pointer;
+}
+.sub-options li:hover{
+    color: black;
+}
+
