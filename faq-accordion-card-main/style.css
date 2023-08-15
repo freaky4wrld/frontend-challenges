@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-position: center; 
+    background-repeat: no-repeat;
+    font-family: "Kumbh Sans", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+}
+.mobile{display: none;}
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    gap: 2rem;
+    box-shadow: 0 9px 7px hsl(240, 8%, 29%);
+    border-radius: 1.2rem;
+    width: 68%;
+    margin: 7rem auto;
+}
+#img-container{
+    background-image: url(images/bg-pattern-desktop.svg);
+    background: cover no-repeat center;
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+.fg-img{
+    position: relative;
+    top: 0.3rem;
+    left: -35.1rem; 
+    z-index: 2;
+}
+.bg-img{
+    display: flex;
+    align-items: flex-end;
+}
+#faq-section{
+    align-self: center;
+    padding: 2rem 3rem 2rem 0;
+    width: 70%;
+}
+#faq-section h1{font-weight: bolder;}
+.questions{
+    margin: 2rem 0 0 0;
+    padding-bottom: 1rem;
+    border-bottom: 2px  solid hsl(240, 5%, 91%);
+}   
+.question-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question-head h4{color: hsl(237, 12%, 33%);}
+.accordian-btn{
+    background-color: white;
+    border: none;
+}
+.answer{
+    padding-top: 1rem;
+    display: none;
+    font-size: 14px;
+    margin-top: 4px;
+    color: hsl(240, 6%, 50%);
+}
+.show{display: block;}
+.rotate{rotate: 180deg;}
+
+/* hover */
+.question-head h4:hover{
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
+/* responsiveness */
+@media screen and (max-width: 1145px) {
+    .container{
+        width: 81%;
+    }
+}
+@media screen and (max-width: 976px) {
+    .container{
+        width: 90%;
+        gap: 2rem;
+    }
+    #faq-section{
+        width: 50%;
+        padding: 2.1rem 2.1rem 2.1rem 0;
+        min-height: 50vh;
+        justify-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .container{
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 12rem auto;
+        gap: 0.9rem;
+        padding-bottom: 3rem;
+    }
+    #img-container{
+        display: flex;
+        background-image: url(images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 21vh;
+    }
+    .desktop, .fg-img{display: none;}
+    .mobile{
+        display: block;
+        position: relative;
+        width: 100%;
+        top: -4.5rem;
+        left: 1.2rem;
+    }
+    #faq-section{
+        padding: 0 0 0 0;
+        width: 89%;
+        margin: 1rem auto;
+    }
+    #faq-section h1{
+        text-align: center;
+    }
+}
