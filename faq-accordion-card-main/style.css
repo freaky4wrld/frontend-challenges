@@ -10,8 +10,8 @@ body{
     background-position: center; 
     background-repeat: no-repeat;
     font-family: "Kumbh Sans", sans-serif;
+    width: 100%;
 }
-
 .container{
     display: flex;
     justify-content: space-between;
@@ -31,8 +31,8 @@ body{
 }
 .fg-img{
     position: absolute;
-    top: 19rem;
-    left: 7rem; 
+    top: 18rem;
+    left: 9rem; 
     z-index: 2;
 }
 .bg-img{
@@ -40,12 +40,15 @@ body{
     align-items: flex-end;
 }
 #faq-section{
-    padding: 4rem 4rem 4rem 0;
+    align-self: center;
+    padding: 3rem 3rem 3rem 0;
     width: 70%;
+    min-height: 70vh;
 }
+#faq-section h1{font-weight: bolder;}
 .questions{
-    margin: 1.2rem 0 0 0;
-    padding-bottom: 0.5rem;
+    margin: 2rem 0 0 0;
+    padding-bottom: 1rem;
     border-bottom: 2px  solid hsl(240, 5%, 91%);
 }   
 .question-head{
@@ -54,9 +57,24 @@ body{
     align-items: center;
 }
 .question-head h4{color: hsl(237, 12%, 33%);}
+.accordian-btn{
+    background-color: white;
+    border: none;
+}
 .answer{
-    font-size: 12px;
+    padding-top: 1rem;
+    display: none;
+    font-size: 14px;
     margin-top: 4px;
     color: hsl(240, 6%, 50%);
 }
+.show{display: block;}
+.rotate{rotate: 180deg;}
+
+/* hover */
+.question-head h4:hover{
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
 
