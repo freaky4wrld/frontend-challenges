@@ -7,20 +7,39 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div id="calc-outer">
+    <div id="calc-head">
+      <h2>calc</h2>
+      <div class="slider">
+      </div>
+    </div>
+    <div id="calc-display">
+      <div id="display-content"></div>
+    </div>
+    <div id="calc-operations">
+      <div id="calc-buttons">
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn" id="del-btn">DEL</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn" id="add-btn">+</button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn" id="subtract-btn">-</button>
+        <button class="btn" id="decimal-btn">.</button>
+        <button class="btn">0</button>
+        <button class="btn" id="divide-btn">/</button>
+        <button class="btn" id="multiply-btn">X</button>
+        <button class="btn" id="reset-btn">RESET</button>
+        <button class="btn" id="ans-btn">=</button>
+      </div>
+    </div>
   </div>
 </body>
 </html>
