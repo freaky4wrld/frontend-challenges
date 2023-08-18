@@ -23,8 +23,10 @@ var keyColorAndShadow = {
 }
 
 var textColor = {
-    light: 'hsl(0, 0%, 100%)',
-    dark: 'hsl(221, 14%, 31%)',
+    head: 'hsl(0, 0%, 100%)',
+    num: 'hsl(221, 14%, 31%)',
+    resetDel: 'hsl(0, 0%, 100%)',
+    ans: 'hsl(0, 0%, 100%)',
 }
 
 var backgroundColor2 = {
@@ -39,18 +41,21 @@ var keyColorAndShadow2 = {
         shadow: 'hsl(25, 99%, 27%)',
     },
     reset: {
-        color: 'hsl(45, 7%, 89%)',
-        shadow: 'hsl(35, 11%, 61%)',
-    },
-    num: {
         color: 'hsl(185, 42%, 37%)',
         shadow: 'hsl(185, 58%, 25%)',
+    },
+    
+    num: {
+        color: 'hsl(45, 7%, 89%)',
+        shadow: 'hsl(35, 11%, 61%)',
     },
 }
 
 var textColor2 = {
-    light: 'hsl(0, 0%, 100%)',
-    dark: 'hsl(60, 10%, 19%)',
+    head: 'hsl(60, 10%, 19%)',
+    num: 'hsl(60, 10%, 19%)',
+    resetDel: 'hsl(0, 0%, 100%)',
+    ans: 'hsl(0, 0%, 100%)',
 }
 
 var backgroundColor3 = {
@@ -75,8 +80,10 @@ var keyColorAndShadow3 = {
 }
 
 var textColor3 = {
-    light: 'hsl(0, 0%, 100%)',
-    dark: 'hsl(198, 20%, 13%)',
+    head: 'hsl(52, 100%, 62%)',
+    num: 'hsl(52, 100%, 62%)',
+    resetDel: 'hsl(0, 0%, 100%)',
+    ans: 'hsl(198, 20%, 13%)',
 }
 
 var themeOneDesignSpecs = [backgroundColor, keyColorAndShadow, textColor];
@@ -87,22 +94,41 @@ var themeThreeDesignSpecs = [backgroundColor3, keyColorAndShadow3, textColor3];
 themeSlider.addEventListener('input', ()=>{
     switch (themeSlider.value) {
         case '1':
-            // setThemeSpecs(themeOneDesignSpecs);
-            console.log(1)
+            setThemeSpecs(themeOneDesignSpecs);
             break;
         case '2':
-            // setThemeSpecs(themeTwoDesignSpecs);
-            console.log(2)
+            setThemeSpecs(themeTwoDesignSpecs);
+            break;
         case '3':
-            // setThemeSpecs(themeThreeDesignSpecs);
-            console.log(3)
+            setThemeSpecs(themeThreeDesignSpecs);
             break;
         default:
-            // setThemeSpecs(themeOneDesignSpecs);
+            setThemeSpecs(themeOneDesignSpecs);
             break;
     }
 })
 
 function setThemeSpecs(arr){
+    // backgoround color change
     rootStyle.style.setProperty('--main-background',arr[0].main);
+    rootStyle.style.setProperty('--screen-background', arr[0].screen);
+    rootStyle.style.setProperty('--toggle-and-key-background', arr[0].toggleAndKey);
+    
+    // key and toggle color change
+
+    // toggle and ans key
+    rootStyle.style.setProperty('--toggle-and-ans-key-color',arr[1].ansAndToggle.color);
+    rootStyle.style.setProperty('--toggle-and-ans-key-shadow', arr[1].ansAndToggle.shadow);
+    //  reset and del key
+    rootStyle.style.setProperty('--reset-del-key-color',arr[1].reset.color);
+    rootStyle.style.setProperty('--reset-del-key-shadow', arr[1].reset.shadow);
+    // num and operaions key
+    rootStyle.style.setProperty('--num-operations-key-color',arr[1].num.color);
+    rootStyle.style.setProperty('--num-operations-key-shadow', arr[1].num.shadow);
+
+    // text color change
+    rootStyle.style.setProperty('--text-head', arr[2].head)
+    rootStyle.style.setProperty('--text-num',arr[2].num);
+    rootStyle.style.setProperty('--text-reset-del', arr[2].resetDel);
+    rootStyle.style.setProperty('--text-ans', arr[2].ans);
 }

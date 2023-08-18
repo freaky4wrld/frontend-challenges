@@ -13,8 +13,11 @@
     --num-operations-key-color: hsl(30, 25%, 89%);
     --num-operations-key-shadow: hsl(28, 16%, 65%);
     /* text */
-    --text-light: hsl(0, 0%, 100%);
-    --text-dark: hsl(221, 14%, 31%);
+    --text-head: hsl(0, 0%, 100%);
+    --text-num: hsl(221, 14%, 31%);
+    --text-reset-del: hsl(0, 0%, 100%);
+    --text-ans: hsl(0, 0%, 100%);
+    
 }
 
 *{
@@ -41,7 +44,7 @@ body, .btn
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--text-light);
+    color: var(--text-head);
 }
 .calc-slider{
     display: flex;
@@ -73,7 +76,6 @@ body, .btn
     height: 15px;
     background: var(--toggle-and-ans-key-color);
     border-color: var(--toggle-and-ans-key-color);
-    box-shadow: 0.9px 0.7px 9px var(--toggle-and-ans-key-shadow);
     border-radius: 50%;
   }
   
@@ -82,7 +84,6 @@ body, .btn
     height: 15px;
     background: var(--toggle-and-ans-key-color);
     border-color: var(--toggle-and-ans-key-color);
-    box-shadow: 0.9px 0.7px 9px var(--toggle-and-ans-key-shadow);
     border-radius: 50%;
   }
 #calc-display{
@@ -95,7 +96,7 @@ body, .btn
     justify-content: flex-end;
 }
 #display-content{
-    color: var(--text-light);
+    color: var(--text-head);
     font-size: 3rem;
 }
 #calc-operations{
@@ -117,7 +118,7 @@ body, .btn
     background-color: var(--num-operations-key-color);
     border: var(--num-operations-key-color) solid;
     box-shadow: 0 3.6px 0 var(--num-operations-key-shadow);
-    color: var(--text-dark);
+    color: var(--text-num);
 }
 #calc-sm-buttons{
     width: 84%;
@@ -133,8 +134,8 @@ body, .btn
     /* grid-template-rows: repeat(2,2fr); */
     gap: 1rem;
 }
-#reset-btn, #del-btn, #ans-btn{
-    color: var(--text-light);
+#reset-btn, #del-btn{
+    color: var(--text-reset-del);
 }
 #reset-btn, #del-btn{
     background-color: var(--reset-del-key-color);
@@ -145,4 +146,5 @@ body, .btn
     background-color: var(--toggle-and-ans-key-color);
     border: var(--toggle-and-ans-key-color) solid;
     box-shadow: 0px 3.6px 0 var(--toggle-and-ans-key-shadow);
+    color: var(--text-ans);
 }
