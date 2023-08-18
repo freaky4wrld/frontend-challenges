@@ -63,6 +63,7 @@ body, .btn
     gap: 1rem;
 }
 #calc-theme{
+    --webkit-appearance: none;
     width: 85px;
     height: 25px;
     padding: 10px;
