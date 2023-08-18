@@ -34,7 +34,7 @@ body, .btn
 
 #calc-outer{
     width: 36%;
-    margin: 2rem auto;
+    margin: 2.7rem auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -164,3 +164,21 @@ body, .btn
     cursor: pointer;
 }
 
+/* mobile  responsiveness */
+@media screen and (max-width: 950px) {
+    #calc-outer{
+        width: 54%;
+    }
+}
+@media screen and (max-width: 650px){
+    #calc-outer{
+        margin: 3.6rem auto;
+        width: 72%;
+    }
+}
+@media screen and (max-width: 500px) {
+    #calc-outer{
+        margin: 5rem auto;
+        width: 84%;
+    }
+}
