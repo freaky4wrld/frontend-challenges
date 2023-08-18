@@ -63,13 +63,23 @@ body, .btn
     gap: 1rem;
 }
 #calc-theme{
-    --webkit-appearance: none;
+    appearance: none;
     width: 85px;
     height: 25px;
     padding: 10px;
     border-radius: 12px;
     background: var(--toggle-and-key-background);
 }
+#calc-theme::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 85px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 12px;
+    background: var(--toggle-and-key-background);
+}
+
 #calc-theme::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
