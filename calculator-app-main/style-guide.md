@@ -38,8 +38,8 @@ The designs were created to the following widths:
 #### Backgrounds
 
 - Light gray (main background): hsl(0, 0%, 90%)
-- Grayish red (toggle background, keypad background): hsl(0, 5%, 81%)
 - Very light gray (screen background): hsl(0, 0%, 93%)
+- Grayish red (toggle background, keypad background): hsl(0, 5%, 81%)
 
 #### Keys
 
@@ -91,3 +91,4 @@ The designs were created to the following widths:
 
 - Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
 - Weights: 700
+Yo I'm gonna make this cool af!!!

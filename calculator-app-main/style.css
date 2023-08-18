@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+:root{
+    /* backgrounds */
+    --main-background: hsl(222, 26%, 31%);
+    --screen-background: hsl(224, 36%, 15%);
+    --toggle-and-key-background: hsl(223, 31%, 20%);
+    /* keys */
+    --toggle-and-ans-key-color: hsl(6, 63%, 50%);
+    --toggle-and-ans-key-shadow: hsl(6, 70%, 34%);
+    --reset-del-key-color: hsl(225, 21%, 49%);
+    --reset-del-key-shadow: hsl(224, 28%, 35%);
+    --num-operations-key-color: hsl(30, 25%, 89%);
+    --num-operations-key-shadow: hsl(28, 16%, 65%);
+    /* text */
+    --text-head: hsl(0, 0%, 100%);
+    --text-num: hsl(221, 14%, 31%);
+    --text-reset-del: hsl(0, 0%, 100%);
+    --text-ans: hsl(0, 0%, 100%);
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, .btn
+{
+    background-color: var(--main-background);
+    font-family: 'League Spartan', sans-serif;
+}
+
+#calc-outer{
+    width: 36%;
+    margin: 2.7rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* align-items: center; */
+}
+#calc-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-head);
+}
+.calc-slider{
+    display: flex;
+    gap: 2rem;
+    align-items: flex-end;
+}
+.slider{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.slider-value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#calc-theme{
+    width: 85px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 12px;
+    background: var(--toggle-and-key-background);
+}
+#calc-theme::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: var(--toggle-and-ans-key-color);
+    border-color: var(--toggle-and-ans-key-color);
+    border-radius: 50%;
+  }
+  
+#calc-theme::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: var(--toggle-and-ans-key-color);
+    border-color: var(--toggle-and-ans-key-color);
+    border-radius: 50%;
+  }
+#calc-display{
+    width: 100%;
+    margin: 0.1rem auto;
+    background-color: var(--screen-background);
+    min-height: 22vh;
+    padding: 2.1rem 3rem;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    justify-content: center;
+    align-items: flex-end;
+}
+#sub-display{
+    font-size: 1.2rem;
+    color: var(--text-head);
+    font-weight: 300;
+}
+#display-content{
+    color: var(--text-head);
+    font-size: 3rem;
+}
+#calc-operations{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--toggle-and-key-background);
+    min-height: 54vh;
+    border-radius: 12px;
+}
+.btn{
+    width: 100%;
+    min-height: 7vh;
+    border-radius: 7px;
+    font-size: 1.6rem;
+    background-color: var(--num-operations-key-color);
+    border: var(--num-operations-key-color) solid;
+    box-shadow: 0 3.6px 0 var(--num-operations-key-shadow);
+    color: var(--text-num);
+}
+#calc-sm-buttons{
+    width: 84%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+}
+#calc-lg-buttons{
+    width: 84%;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    /* grid-template-rows: repeat(2,2fr); */
+    gap: 1rem;
+}
+#reset-btn, #del-btn{
+    color: var(--text-reset-del);
+}
+#reset-btn, #del-btn{
+    background-color: var(--reset-del-key-color);
+    border: var(--reset-del-key-color) solid;
+    box-shadow: 0px 3.6px 0 var(--reset-del-key-shadow);
+}
+#ans-btn{
+    background-color: var(--toggle-and-ans-key-color);
+    border: var(--toggle-and-ans-key-color) solid;
+    box-shadow: 0px 3.6px 0 var(--toggle-and-ans-key-shadow);
+    color: var(--text-ans);
+}
+
+
+/* active states */
+#calc-theme:hover, #ans-btn:hover{
+    filter: brightness(1.75);
+    cursor: pointer;
+}
+#reset-btn:hover, #del-btn:hover{
+    filter: brightness(1.7);
+    cursor: pointer;
+}
+.btn:hover{
+    filter: brightness(1.6);
+    cursor: pointer;
+}
+
+/* mobile  responsiveness */
+@media screen and (max-width: 950px) {
+    #calc-outer{
+        width: 54%;
+    }
+}
+@media screen and (max-width: 650px){
+    #calc-outer{
+        margin: 3.6rem auto;
+        width: 72%;
+    }
+}
+@media screen and (max-width: 500px) {
+    #calc-outer{
+        margin: 5rem auto;
+        width: 84%;
+    }
+}
