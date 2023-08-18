@@ -23,7 +23,8 @@
     box-sizing: border-box;
 }
 
-body, .btn{
+body, .btn
+{
     background-color: var(--main-background);
     font-family: 'League Spartan', sans-serif;
 }
@@ -59,7 +60,7 @@ body, .btn{
     gap: 1rem;
 }
 #calc-theme{
-    width: 75px;
+    width: 85px;
     height: 25px;
     padding: 10px;
     border-radius: 12px;
@@ -68,6 +69,12 @@ body, .btn{
 #calc-theme::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
+    width: 15px;
+    height: 15px;
+    background: var(--toggle-and-ans-key-color);
+    border-color: var(--toggle-and-ans-key-color);
+    box-shadow: 0.9px 0.7px 9px var(--toggle-and-ans-key-shadow);
+    border-radius: 50%;
   }
   
 #calc-theme::-moz-range-thumb {
