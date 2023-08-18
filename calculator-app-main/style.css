@@ -90,10 +90,19 @@ body, .btn
     width: 100%;
     margin: 0.1rem auto;
     background-color: var(--screen-background);
+    min-height: 22vh;
     padding: 2.1rem 3rem;
     border-radius: 0.7rem;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    gap: 0.7rem;
+    justify-content: center;
+    align-items: flex-end;
+}
+#sub-display{
+    font-size: 1.2rem;
+    color: var(--text-head);
+    font-weight: 300;
 }
 #display-content{
     color: var(--text-head);
