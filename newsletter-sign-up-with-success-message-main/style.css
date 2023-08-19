@@ -13,6 +13,8 @@
     --card-background-color: hsl(0,0%,100%);
     --card-text-color: hsl(234, 29%, 20%);
     --email-section-color: hsl(231, 7%, 60%);
+    --button-active-gradient-start: hsl(331, 78%, 59%);
+    --button-active-gradient-end: hsl(4, 100%, 67%);
 }
 
 *{
@@ -23,6 +25,8 @@
 body{
     background-color: var(--page-background-color);
 }
+/* js helper class */
+.show{display: block;}
 
 .card-container{
     background-color: var(--card-background-color);
@@ -30,13 +34,14 @@ body{
     margin: 3rem auto;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 2rem 2rem 3rem;
+    padding: 2rem;
     min-height: 40vh;
+    border-radius: 2rem;
 }
 .card-content{
     color: var(--card-text-color);
     font-family: roboto-reg;
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,10 +50,11 @@ body{
 .card-text{
     display: flex;
     flex-direction: column;
-    
+    gap: 1.8rem;
 }
 .card-text h1{
     font-family: roboto-bold;
+    font-size: 3.6rem;
 }
 .card-text h1, .card-text p{
     padding-right: 1rem;
@@ -60,9 +66,68 @@ body{
     list-style: url('assets/images/icon-list.svg');
     list-style-position: inside;
 }
+.card-text ul li:not(.card-text ul li:last-child){
+    margin-bottom: 0.7rem;
+}
 .card-img{
     width: 40%;
 }
 .card-img img{
     width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.2rem;
+}
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+label{font-size: 12px;}
+label, button{
+    font-family: roboto-bold;
+}
+button, input{
+    min-height: 7vh;
+    border-radius: 7px;
+}
+button{
+    background-color: var(--card-text-color);
+    border: solid 2px var(--card-text-color);
+    color: var(--card-background-color);
+    font-size: 16px;
+}
+input{
+    padding: 0 1.2rem;
+    font-size: 15px;
+    color: var(--page-background-color);
+    border:solid 0.3px var(--email-section-color);
+}
+#success-mssg{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 7rem auto;
+}
+span{
+    font-family: roboto-bold;
+}
+.card-icon{
+    width: 21%;
+}
+/* active states */
+*:focus{outline: none;} /*override the default */
+input:focus, input:hover{
+    border-color: solid 0.7px var(--page-background-color);
+    cursor: pointer;
+}
+button:hover{
+    background-image: linear-gradient(to right, var(--button-active-gradient-start),var(--button-active-gradient-end));
+    border: none;
+    box-shadow: 0 7px 10px var(--button-active-gradient-end);
 }

@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <div class="card-container">
+    <div id="sign-up-form" class="card-container">
       <div class="card-content">
         <div class="card-text">
           <h1>Stay updated!</h1>
@@ -22,13 +22,28 @@
           </ul>
         </div>
         <form action="#" method="post">
+          <fieldset>
           <label for="email">Email Address</label>
           <input type="email" name="email" id="email" placeholder="email@company.com">
+          </fieldset>
           <button type="submit">Subscribe to monthly newsletter</button>
         </form>
       </div>
       <div class="card-img">
         <img src="assets/images/illustration-sign-up-desktop.svg" alt="Sign-Up Card Image">
+      </div>
+    </div>
+    <div id="success-mssg" class="card-container">
+      <div class="card-content">
+        <div class="card-text">
+          <div class="card-icon">
+            <img src="assets/images/icon-success.svg" alt="success-mssg">
+          </div>
+          <h1>Thanks for subscribing!</h1>
+          <p>A confirmation email has been sent to <span id="email-response">ash@loremcompany.com</span>. 
+            Please open it and click the button inside to confirm your subscription.</p>
+          <button type="button"> Dismiss message</button>
+        </div>
       </div>
     </div>
 </body>
