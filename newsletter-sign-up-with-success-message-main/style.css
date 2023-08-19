@@ -86,8 +86,13 @@ fieldset{
     flex-direction: column;
     gap: 0.7rem;
 }
-label{font-size: 12px;}
-label, button{
+.validation{
+    display: flex;
+    justify-content: space-between;
+}
+label, #validation-mssg {font-size: 12px;}
+#validation-mssg{color: var(--button-active-gradient-end);}
+label, button, #validation-mssg{
     font-family: roboto-bold;
 }
 button, input{
@@ -105,6 +110,11 @@ input{
     font-size: 15px;
     color: var(--page-background-color);
     border:solid 0.3px var(--email-section-color);
+}
+.invalid{
+    color: var(--button-active-gradient-end);
+    border-color: var(--button-active-gradient-end) ;
+    background-color: hsla(4, 100%, 67%,0.2);
 }
 /* success card */
 #success-mssg{
