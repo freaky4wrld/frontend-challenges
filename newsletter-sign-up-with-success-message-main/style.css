@@ -25,9 +25,7 @@
 body{
     background-color: var(--page-background-color);
 }
-/* js helper class */
-.show{display: block;}
-
+.mobile{display: none;}
 .card-container{
     background-color: var(--card-background-color);
     width: 66%;
@@ -35,7 +33,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    min-height: 40vh;
+    height: 40%;
     border-radius: 2rem;
 }
 .card-content{
@@ -93,7 +91,7 @@ label, button{
     font-family: roboto-bold;
 }
 button, input{
-    min-height: 7vh;
+    height: 50px;
     border-radius: 7px;
 }
 button{
@@ -108,9 +106,10 @@ input{
     color: var(--page-background-color);
     border:solid 0.3px var(--email-section-color);
 }
+/* success card */
 #success-mssg{
     width: 40%;
-    display: flex;
+    display: none;
     justify-content: center;
     padding: 7rem auto;
 }
@@ -130,4 +129,98 @@ button:hover{
     background-image: linear-gradient(to right, var(--button-active-gradient-start),var(--button-active-gradient-end));
     border: none;
     box-shadow: 0 7px 10px var(--button-active-gradient-end);
+}
+
+/* responsiveness */
+@media screen and (max-width: 1272px) {
+    .card-container{
+        width: 70%;
+    }
+    .card-content{
+        gap: 2rem
+    }
+    .card-text{
+        gap: 1rem
+    }
+    .card-text h1{
+        font-size: 2.7rem;
+    }
+    .card-img{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 1272px) {
+    .card-container{
+        width: 72%;
+    }
+    .card-content{
+        gap: 1.8rem
+    }
+    .card-text{
+        gap: 0.9rem
+    }
+    .card-text h1{
+        font-size: 2.5rem;
+    }
+    .card-img{
+        width: 47%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .card-container{
+        width: 75%;
+        padding: 1.2rem;
+    }
+    .card-content{
+        gap: 1.2rem
+    }
+    .card-text{
+        gap: 0.7rem
+    }
+    .card-text h1{
+        font-size: 2.5rem;
+    }
+    .card-img{
+        width: 48%;
+    }
+    button, input{
+        height: 45px;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    .mobile{display: block;}
+    .desktop{display: none;}
+    .card-container{
+        width: 100%;
+        flex-direction: column-reverse;
+        min-height: 100vh;
+        padding: 0 0 2rem 0;  
+        margin: 0;
+        justify-content: flex-end;
+        gap: 4rem;
+        align-items: center;
+        border-radius: 0px;
+    }
+    .card-img{
+        width: 100%;
+    }
+    .card-content{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2.7rem;
+        gap: 2.7rem;
+    }
+    .card-text{
+        gap: 1.8rem;
+    }
+    form{
+        gap: 2rem;
+    }
+    #success-mssg{
+        width: 100%;
+        padding: 9rem 0.5rem;
+        justify-content: flex-end;
+    }
 }
