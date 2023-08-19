@@ -1,0 +1,68 @@
+/* importing local fonts to stylesheets*/
+@font-face {
+    font-family: roboto-reg;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: roboto-bold;
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
+
+:root{
+    --page-background-color: hsl(235, 18%, 26%);
+    --card-background-color: hsl(0,0%,100%);
+    --card-text-color: hsl(234, 29%, 20%);
+    --email-section-color: hsl(231, 7%, 60%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--page-background-color);
+}
+
+.card-container{
+    background-color: var(--card-background-color);
+    width: 66%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 2rem 3rem;
+    min-height: 40vh;
+}
+.card-content{
+    color: var(--card-text-color);
+    font-family: roboto-reg;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    
+}
+.card-text h1{
+    font-family: roboto-bold;
+}
+.card-text h1, .card-text p{
+    padding-right: 1rem;
+}
+.card-text p, .card-text ul li{
+    font-size: 16px;
+}
+.card-text ul{
+    list-style: url('assets/images/icon-list.svg');
+    list-style-position: inside;
+}
+.card-img{
+    width: 40%;
+}
+.card-img img{
+    width: 100%;
+}
