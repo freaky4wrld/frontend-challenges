@@ -35,6 +35,7 @@ body{
     padding: 2rem;
     height: 40%;
     border-radius: 2rem;
+    animation-duration: 1.2s;
 }
 .card-content{
     color: var(--card-text-color);
@@ -122,6 +123,7 @@ input{
     display: none;
     justify-content: center;
     padding: 7rem auto;
+    animation-duration: 1.2s;
 }
 span{
     font-family: roboto-bold;
