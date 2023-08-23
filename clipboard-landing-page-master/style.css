@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    --footer-background: hsl(192, 12%, 92%);
+    --white: hsl(0,0%,100%);
+}
+body{
+    background-color: var(--white);
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+header{
+    padding: 7rem 1.2rem 1rem 1.2rem;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#showcase-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 42.9%;
+    text-align: center;
+}
+.headings{
+    color: var(--dark-grayish-blue);
+    font-weight: bold;
+}
+p{
+    color: var(--grayish-blue);
+    line-height: 1.5;
+}
+.btn-section{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.btn{
+    padding: 1rem 1.8rem;
+    border-radius: 50px;
+    color: var(--white);
+}
+#ios-btn{
+    background-color: var(--strong-cyan);
+    border: outset 1.5px var(--strong-cyan);
+    
+}
+#mac-btn{
+    background-color: var(--light-blue);
+    border: outset 1.5px var(--light-blue);
+}
+/* active states */
+#ios-btn:hover{
+    box-shadow: 1.5px 1px 9px var(--strong-cyan);
+    filter: brightness(1.09);
+    cursor:pointer
+}
+#mac-btn:hover{
+    box-shadow: 1.5px 1px 9px var(--light-blue);
+    filter: brightness(1.09);
+    cursor:pointer
+}
+/* ------------------------------------------------------------------------ */
+main{
+    padding: 2rem 0 2rem 0;
+    margin-bottom: 4rem;
+}
+.vertical-section{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    /* justify-content: space-between; */
+    margin: 3.1rem 0;
+}
+.img-section{
+    width: 43%;
+}
+.img-section img{
+    width: 100%;
+}
+.horizontal-text{
+    width: 48%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.7rem;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    gap: 3.6rem;
+}
+.aside-text, #section-5{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem
+}
+#section-2{
+    padding-top: 1.8rem;
+}
+#section-2 .vertical-section{
+    justify-content: center;
+}
+#section-2 .img-section{
+    width: 50%;
+}
+#section-3, #section-4{
+    margin: 2rem 0;
+}
+.icon-vertical, #section-4{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon-sections{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    text-align: center;
+    gap: 0.7rem;
+}
+#section-5{
+    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* -------------------- */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0 1rem 0;
+    background-color: var(--footer-background);
+}
+
+.logo-footer{
+    width: 4%;
+}
+.logo-footer img{
+    width: 100%;
+}
+.footer-links{
+    list-style: none;
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 4.3rem;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+}
+.footer-links a{
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
+.footer-icons{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.footer-links a:hover{
+    color: var(--strong-cyan);
+}
+.footer-icons img:hover{
+    filter: invert(59%) sepia(60%) saturate(526%) hue-rotate(122deg) brightness(92%) contrast(85%);
+    cursor: pointer;
+}
