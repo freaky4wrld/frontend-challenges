@@ -59,6 +59,7 @@ p{
 #ios-btn{
     background-color: var(--strong-cyan);
     border: outset 1.5px var(--strong-cyan);
+    box-shadow: 1.5px 1px 9px var(--strong-cyan);
     
 }
 #mac-btn{
@@ -67,7 +68,6 @@ p{
 }
 /* active states */
 #ios-btn:hover{
-    box-shadow: 1.5px 1px 9px var(--strong-cyan);
     filter: brightness(1.09);
     cursor:pointer
 }
@@ -189,4 +189,61 @@ footer{
 .footer-icons img:hover{
     filter: invert(59%) sepia(60%) saturate(526%) hue-rotate(122deg) brightness(92%) contrast(85%);
     cursor: pointer;
+}
+
+/* ----------------responsivenss------------------------- */
+@media screen and (max-width: 1080px) {
+    aside{
+        gap: 0.7rem;
+        width: 34%; 
+    }
+    .aside-text{
+        gap: 0.3rem
+    }
+    .footer-links{
+        column-gap: 2rem;
+    }
+}
+/* -----------------------mobile-responsiveness------------ */
+@media screen and (max-width: 800px) {
+    header{
+        background-image: url(images/bg-header-mobile.png);
+    }
+    .intro, .btn-section, .btn, .horizontal-text,.vertical-section, .img-section,
+    aside, #section-2 .img-section, .icon-vertical, .icon-sections, 
+    .footer-links{
+        width: 100%;
+    }
+    aside{
+        text-align: center;
+        gap: 2.52rem;
+    }
+    .btn-section, .vertical-section, .icon-vertical,
+    #section-4, footer, .footer-links{
+        flex-direction: column;
+    }
+    .icon-vertical, #section-4{
+        gap: 2.52rem;
+    }
+    main{
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+    .vertical-section{
+        gap: 3rem;
+    }
+    p{
+        line-height: 1.7;
+    }
+    footer{
+        justify-content: center;
+        align-items: center;
+        gap: 2.52rem;
+    }
+    .logo-footer{
+        width: 18%;
+    }
+    .footer-icons{
+        width: 39%;
+    }
 }
