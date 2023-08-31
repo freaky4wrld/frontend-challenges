@@ -9,6 +9,12 @@ module.exports = {
       xl: '1440px'
     },
     extend: {
+      keyframes: {
+        slide: {
+         'from': {opacity: '0.2'},
+         'to': {opacity: '1'}
+        }
+      },
       colors: {
         brightRed: 'hsl(12, 88%, 59%)',
         brightRedLight: 'hsl(12, 88%, 69%)',

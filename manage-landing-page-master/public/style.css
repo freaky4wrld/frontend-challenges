@@ -626,6 +626,10 @@ video {
   margin-top: 8rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -660,6 +664,24 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-\[slide_1\.5s_ease-out\] {
+  animation: slide 1.5s ease-out;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -811,6 +833,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -824,6 +851,11 @@ video {
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-8 {
@@ -894,14 +926,14 @@ video {
 }
 
 body{
-  background-image: url(../images/bg-tablet-pattern.svg);
+  background-image: url(../public/images/bg-tablet-pattern.svg);
   background-repeat: no-repeat;
   background-size: 800px;
   background-position: 90% -25%;
 }
 
 #cta{
-  background-image: url(../images/bg-simplify-section-desktop.svg);
+  background-image: url(../public/images/bg-simplify-section-desktop.svg);
   background-repeat: no-repeat;
 }
 
@@ -912,7 +944,7 @@ body{
   }
 
   #cta{
-    background-image: url(../images/bg-simplify-section-mobile.svg);
+    background-image: url(../public/images/bg-simplify-section-mobile.svg);
   }
 }
 
@@ -1028,6 +1060,10 @@ body{
 
   .md\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .md\:animate-none {
+    animation: none;
   }
 
   .md\:flex-row {

@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 body{
-    background-image: url(../images/bg-tablet-pattern.svg);
+    background-image: url(../public/images/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
     background-size: 800px;
     background-position: 90% -25%;
 }
 
 #cta{
-    background-image: url(../images/bg-simplify-section-desktop.svg);
+    background-image: url(../public/images/bg-simplify-section-desktop.svg);
     background-repeat: no-repeat;
 }
 
@@ -20,7 +20,7 @@ body{
         background-size: 500px;
     }
     #cta{
-        background-image: url(../images/bg-simplify-section-mobile.svg);
+        background-image: url(../public/images/bg-simplify-section-mobile.svg);
     }
 }
 

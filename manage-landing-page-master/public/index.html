@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Manage landing page</title>
@@ -15,7 +15,7 @@
   <nav class="relative container mx-auto p-6">
     <div class="flex items-center justify-between">
       <div class="pt-2">
-        <img src="../images/logo.svg" alt="">
+        <img src="images/logo.svg" alt="">
       </div>
       <div class="hidden space-x-6 md:flex">
         <a href="#" class='hover:text-darkGrayishBlue'>Pricing</a>
@@ -59,7 +59,7 @@
         </div>
       </div>
       <div class="md:w-1/2">
-        <img src="../images/illustration-intro.svg" alt="">
+        <img src="images/illustration-intro.svg" alt="">
       </div>
     </div>
   </section>
@@ -147,41 +147,45 @@
       <h2 class="text-4xl font-bold text-center">
         What they've said
       </h2>
-      <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
-        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg 
-        bg-veryLightGray md:w-1/3">
-          <img src="../images/avatar-anisha.png" class="w-16 -mt-14" alt="">
+      <div id='testimonial-slider' class="flex flex-col mt-24 md:flex-row md:space-x-6">
+        <div class="slide flex flex-col items-center p-6 space-y-6 rounded-lg 
+        bg-veryLightGray md:w-1/3 md:animate-none">
+          <img src="images/avatar-anisha.png" class="w-16 -mt-14" alt="">
           <h5 class="text-lg font-bold">Anisha Li</h5>
           <p class="tex-sm text-darkGrayishBlue">“Manage has supercharged our team's
              workflow. The ability to maintain visibility on larger milestones at all 
              times keeps everyone motivated.”</p>
         </div>
 
-        <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg 
-        bg-veryLightGray md:w-1/3 md:flex">
-          <img src="../images/avatar-ali.png" class="w-16 -mt-14" alt="">
+        <div class="slide hidden flex-col items-center p-6 space-y-6 rounded-lg 
+        bg-veryLightGray md:w-1/3 md:flex md:animate-none">
+          <img src="images/avatar-ali.png" class="w-16 -mt-14" alt="">
           <h5 class="text-lg font-bold">Ali Bravo</h5>
           <p class="tex-sm text-darkGrayishBlue">“We have been able to cancel so many other
             subscriptions since using Manage. There is no more cross-channel confusion and 
             everyone is much more focused.”</p>
         </div>
 
-        <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg 
-        bg-veryLightGray md:w-1/3 md:flex">
-          <img src="../images/avatar-richard.png" class="w-16 -mt-14" alt="">
+        <div class="slide hidden flex-col items-center p-6 space-y-6 rounded-lg 
+        bg-veryLightGray md:w-1/3 md:flex md:animate-none">
+          <img src="images/avatar-richard.png" class="w-16 -mt-14" alt="">
           <h5 class="text-lg font-bold">Richard Watts</h5>
           <p class="tex-sm text-darkGrayishBlue">“Manage allows us to provide structure and
             process. It keeps us organized and focused. I can't stop recommending them
             to everyone I talk to!”</p>
         </div>
 
-        <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg 
-        bg-veryLightGray md:w-1/3 md:flex">
-          <img src="../images/avatar-shanai.png" class="w-16 -mt-14" alt="">
+        <div class="slide hidden flex-col items-center p-6 space-y-6 rounded-lg 
+        bg-veryLightGray md:w-1/3 md:flex md:animate-none">
+          <img src="images/avatar-shanai.png" class="w-16 -mt-14" alt="">
           <h5 class="text-lg font-bold">Shanai Gough</h5>
           <p class="tex-sm text-darkGrayishBlue">“Their software allows us to track,
             manage and collaborate on our projects from anywhere. It keeps the whole 
             team in-sync without being intrusive.”</p>
+        </div>
+        <div class="flex flex-row items-center justify-center space-x-3 mt-4 md:hidden">
+          <button id="prev" class="px-7 py-3 text-center text-white bg-brightRed rounded-full hover:bg-brightRedLight">Prev</button>
+          <button id="next" class="px-7 py-3 text-center text-white bg-brightRed rounded-full hover:bg-brightRedLight">Next</button>
         </div>
       </div>
       <div class="my-16">
@@ -209,23 +213,23 @@
         md:flex-col md:space-y-0 md:items-start">
           <div class="mx-auto my-6 text-center text-white md:hidden">Copyright &copy; 2023. All Rights Reserved</div>
           <div>
-            <img src="../images/logo-white.svg" class="h-8" alt="">
+            <img src="images/logo-white.svg" class="h-8" alt="">
           </div>
           <div class="flex justify-center space-x-4">
             <a href="#">
-              <img src="../images/icon-facebook.svg" class="h-8" alt="">
+              <img src="images/icon-facebook.svg" class="h-8" alt="">
             </a>
             <a href="#">
-              <img src="../images/icon-youtube.svg" class="h-8" alt="">
+              <img src="images/icon-youtube.svg" class="h-8" alt="">
             </a>
             <a href="#">
-              <img src="../images/icon-twitter.svg" class="h-8" alt="">
+              <img src="images/icon-twitter.svg" class="h-8" alt="">
             </a>
             <a href="#">
-              <img src="../images/icon-pinterest.svg" class="h-8" alt="">
+              <img src="images/icon-pinterest.svg" class="h-8" alt="">
             </a>
             <a href="#">
-              <img src="../images/icon-instagram.svg" class="h-8" alt="">
+              <img src="images/icon-instagram.svg" class="h-8" alt="">
             </a>
           </div>
       </div>
