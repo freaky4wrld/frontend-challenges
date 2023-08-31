@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       keyframes: {
         slide: {
-         'from': {opacity: '0.2'},
+          'from': {opacity: '0.2'},
          'to': {opacity: '1'}
         }
       },

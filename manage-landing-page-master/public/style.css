@@ -666,20 +666,6 @@ video {
   flex: 1 1 0%;
 }
 
-@keyframes slide {
-  from {
-    opacity: 0.2;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.animate-\[slide_1\.5s_ease-out\] {
-  animation: slide 1.5s ease-out;
-}
-
 .flex-row {
   flex-direction: row;
 }
